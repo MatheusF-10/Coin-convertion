@@ -1,42 +1,74 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.container-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  height: 100vh;
+  background-color: rgb(21, 23, 32);
+}
+
+.name {
+  color: #633BBC;
+  font-size: 48px;
+  font-weight: 700;
+  border-bottom: 1.5px solid transparent;
+  border-image: linear-gradient(0.25turn, rgb(130, 34, 255), rgba(255,0,128), rgba(30, 0, 85, 0));
+  border-image-slice: 1;
+}
+
+.subtitle {
+  color: #8266bd;
+  font-size: 24px;
+  border-bottom: 0.5px solid #39393a;
+  width: 100%;
   text-align: center;
+  padding-bottom: 20px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.container-about {
+  padding: 16px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.about-content {
+  max-width: 800px;
+  width: auto;
+  color: #a8a8b3;
+  font-weight: 300;
+  font-size: 16px;
 }
 
-.card {
-  padding: 2em;
+.container-conversor {
+  background-color: #000;
+  height: 600px;
+  width: 100%;
 }
 
-.read-the-docs {
-  color: #888;
+.container-contact {
+  background-color: rgb(21, 23, 32);
+  height: 400px;
+  width: 100%;
+}
+
+.container-coins {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  color: antiquewhite;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.image-coin {
+  max-width: 140px;
+  max-height: 140px;
+  width: auto;
+  height: auto;
 }

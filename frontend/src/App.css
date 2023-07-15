@@ -60,10 +60,28 @@
 .container-coins {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   color: antiquewhite;
   flex-wrap: wrap;
   padding-top: 20px;
+}
+
+.container-images {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  color: antiquewhite;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.container-info {
+  display: flex;
+  justify-content: space-evenly;
+  color: antiquewhite;
+  padding-top: 20px;
+  list-style: none;
 }
 
 .image-coin {

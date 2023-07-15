@@ -56,3 +56,19 @@
   height: 400px;
   width: 100%;
 }
+
+.container-coins {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  color: antiquewhite;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.image-coin {
+  max-width: 140px;
+  max-height: 140px;
+  width: auto;
+  height: auto;
+}

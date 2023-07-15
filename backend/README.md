@@ -4,7 +4,7 @@ Este é um projeto back-end desenvolvido em Python com Flask para consultar uma 
 
 ## Pré-requisitos
 
-- Python 3.7 ou versão superior
+- Python 3.8 ou versão superior
 - Flask framework instalado
 
 ## Instalação e Configuração

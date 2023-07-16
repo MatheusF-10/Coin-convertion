@@ -7,8 +7,8 @@ export const Menu = () => {
 
   return(
     <ul className='header-list'>
-      {items.map((item) => 
-        <li className='item-list'>{item}</li>
+      {items.map((item, index) => 
+        <li key={index} className='item-list'>{item}</li>
       )}
     </ul>
   )

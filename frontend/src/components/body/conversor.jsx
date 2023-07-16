@@ -20,47 +20,13 @@ export const Conversor = () => {
     coinsList();
   }, []);
 
-  const array = Object.entries(coin).map(([key, value]) => {
-    return {
-      coin: key,
-      brl: value.brl,
-      eur: value.eur,
-      usd: value.usd
-    };
-  });
-
-  console.log(array);
   return (
     <section className='container-conversor'>
       <div className="container-coins">
-        <div className="container-images">
-          <Bitcoin />
-          <Bnb />
-          <Etherum />
-          <Tether />
-        </div>
-        
-          <ul className="container-info">
-            {array.map((a) => (
-              <li style={{"color": "white"}}>{a.coin}</li>
-            ))}
-          </ul>
-          <ul className="container-info">
-            {array.map((a) => (
-              <li style={{"color": "white"}}>{a.brl}</li>
-            ))}
-          </ul>
-          <ul className="container-info">
-            {array.map((a) => (
-              <li style={{"color": "white"}}>{a.eur}</li>
-            ))}
-          </ul>
-          <ul className="container-info">
-            {array.map((a) => (
-              <li style={{"color": "white"}}>{a.usd}</li>
-            ))}
-          </ul>
-        
+        <Bitcoin info={coin.bitcoin  ?? ''}/>
+        <Bnb info={coin.binancecoin ?? ''}/>
+        <Etherum info={coin.ethereum ?? ''}/>
+        <Tether info={coin.tether ?? ''}/>  
       </div>
     </section>
   )
